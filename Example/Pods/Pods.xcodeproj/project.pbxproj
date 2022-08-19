@@ -66,9 +66,9 @@
 		1F2F4B9A17237CD175EAFA9EE68D54EC /* SensorsAnalyticsSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 837288B2D84C8E4CAB4E2686330C5935 /* SensorsAnalyticsSDK.bundle */; };
 		1F48F5B659C453F8090104896D2485FA /* SALogMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6430869575DF993771B2AAFD2BB924 /* SALogMessage.m */; };
 		1F51871877A3D10FA15AC226C885FDF6 /* SAClassDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B8A4832AA50CC5E054079978FF7DB0 /* SAClassDescription.m */; };
-		1F9B22E528AF5BDE005CDFF7 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B22E428AF5BDE005CDFF7 /* Analytics.swift */; };
-		1FF578A328AF67DC00DBB49D /* UIView+Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF578A228AF67DC00DBB49D /* UIView+Analytics.swift */; };
-		1FF578A528AF6B9300DBB49D /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF578A428AF6B9300DBB49D /* AnalyticsManager.swift */; };
+		1FF578AD28AF80CF00DBB49D /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF578A928AF80CF00DBB49D /* Analytics.swift */; };
+		1FF578AF28AF80CF00DBB49D /* UIView+Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF578AB28AF80CF00DBB49D /* UIView+Analytics.swift */; };
+		1FF578B028AF80CF00DBB49D /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF578AC28AF80CF00DBB49D /* AnalyticsManager.swift */; };
 		20E46AC0D0CFD1F6E84C34429DE90DE4 /* SAAbstractLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B859A35C542C5B89C30A60F021CABF /* SAAbstractLogger.m */; };
 		21055AF9CA3305122EC1B505F3E25E42 /* SAJSONUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F240F1D8DFE99C61B0F01C57EA8821 /* SAJSONUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		211B65429BF588404662E2E23B6F8B36 /* SARemoteConfigInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 942C4033822811529CF29BD81D462293 /* SARemoteConfigInterceptor.m */; };
@@ -506,9 +506,9 @@
 		1DA30A772060FEDAF15D8017BAE245A3 /* SAVisualPropertiesConfigSources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAVisualPropertiesConfigSources.h; path = SensorsAnalyticsSDK/Visualized/Config/SAVisualPropertiesConfigSources.h; sourceTree = "<group>"; };
 		1E14C923B69BE29A371B1A17C3205CF9 /* SAViewNodeFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAViewNodeFactory.h; path = SensorsAnalyticsSDK/Visualized/VisualProperties/ViewNode/SAViewNodeFactory.h; sourceTree = "<group>"; };
 		1EC706A05FA26C63D93C1657F58C8AB8 /* SASlinkCreator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlinkCreator.h; path = SensorsAnalyticsSDK/Deeplink/SASlinkCreator.h; sourceTree = "<group>"; };
-		1F9B22E428AF5BDE005CDFF7 /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Analytics.swift; path = AnalyticsManager/Classes/Analytics.swift; sourceTree = "<group>"; };
-		1FF578A228AF67DC00DBB49D /* UIView+Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Analytics.swift"; sourceTree = "<group>"; };
-		1FF578A428AF6B9300DBB49D /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		1FF578A928AF80CF00DBB49D /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		1FF578AB28AF80CF00DBB49D /* UIView+Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Analytics.swift"; sourceTree = "<group>"; };
+		1FF578AC28AF80CF00DBB49D /* AnalyticsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		2074F8F0354D249AF2895C161CB37153 /* SAPropertyDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAPropertyDescription.m; path = SensorsAnalyticsSDK/Visualized/SAPropertyDescription.m; sourceTree = "<group>"; };
 		20A195865382939D47E208E810C17578 /* SAReadWriteLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAReadWriteLock.m; path = SensorsAnalyticsSDK/Core/Utils/SAReadWriteLock.m; sourceTree = "<group>"; };
 		20E52090548172F245FE78476D03A07F /* NSInvocation+SAHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+SAHelpers.m"; path = "SensorsAnalyticsSDK/Visualized/NSInvocation+SAHelpers.m"; sourceTree = "<group>"; };
@@ -947,9 +947,8 @@
 		048BED798F6B01B29B2E7DD089BE50BA /* AnalyticsManager */ = {
 			isa = PBXGroup;
 			children = (
-				1FF578A428AF6B9300DBB49D /* AnalyticsManager.swift */,
-				1F9B22E428AF5BDE005CDFF7 /* Analytics.swift */,
-				1FF578A228AF67DC00DBB49D /* UIView+Analytics.swift */,
+				1FF578B128AF816200DBB49D /* Assets */,
+				1FF578A828AF80CF00DBB49D /* Classes */,
 				38778D73E090C44C2BDAE7123B23C050 /* Pod */,
 				49EBB785B967A860AF121C050C08FDAE /* Support Files */,
 			);
@@ -1076,6 +1075,25 @@
 				FD13C43FAECFBD66EC62F6D5C54B07DA /* SAUserDefaultsStorePlugin.m */,
 			);
 			name = __Store;
+			sourceTree = "<group>";
+		};
+		1FF578A828AF80CF00DBB49D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1FF578A928AF80CF00DBB49D /* Analytics.swift */,
+				1FF578AB28AF80CF00DBB49D /* UIView+Analytics.swift */,
+				1FF578AC28AF80CF00DBB49D /* AnalyticsManager.swift */,
+			);
+			name = Classes;
+			path = AnalyticsManager/Classes;
+			sourceTree = "<group>";
+		};
+		1FF578B128AF816200DBB49D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
+			path = AnalyticsManager/Assets;
 			sourceTree = "<group>";
 		};
 		2740A921D12CBD2CA2F11ADCF5685896 /* AutoTrack */ = {
@@ -2160,10 +2178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FF578A528AF6B9300DBB49D /* AnalyticsManager.swift in Sources */,
-				1FF578A328AF67DC00DBB49D /* UIView+Analytics.swift in Sources */,
+				1FF578B028AF80CF00DBB49D /* AnalyticsManager.swift in Sources */,
 				BD0D57543C4A2805725B70828706AE63 /* AnalyticsManager-dummy.m in Sources */,
-				1F9B22E528AF5BDE005CDFF7 /* Analytics.swift in Sources */,
+				1FF578AF28AF80CF00DBB49D /* UIView+Analytics.swift in Sources */,
+				1FF578AD28AF80CF00DBB49D /* Analytics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
