@@ -1,0 +1,38 @@
+PODS:
+  - AnalyticsManager (0.1.0):
+    - SensorsAnalyticsSDK
+  - SensorsAnalyticsSDK (4.4.3):
+    - SensorsAnalyticsSDK/Core (= 4.4.3)
+  - SensorsAnalyticsSDK/__Store (4.4.3)
+  - SensorsAnalyticsSDK/AutoTrack (4.4.3):
+    - SensorsAnalyticsSDK/Common
+  - SensorsAnalyticsSDK/Base (4.4.3):
+    - SensorsAnalyticsSDK/__Store
+  - SensorsAnalyticsSDK/Common (4.4.3):
+    - SensorsAnalyticsSDK/Extension
+  - SensorsAnalyticsSDK/Core (4.4.3):
+    - SensorsAnalyticsSDK/Common
+    - SensorsAnalyticsSDK/Visualized
+  - SensorsAnalyticsSDK/Extension (4.4.3):
+    - SensorsAnalyticsSDK/Base
+  - SensorsAnalyticsSDK/Visualized (4.4.3):
+    - SensorsAnalyticsSDK/AutoTrack
+
+DEPENDENCIES:
+  - AnalyticsManager (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SensorsAnalyticsSDK
+
+EXTERNAL SOURCES:
+  AnalyticsManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AnalyticsManager: 0e26e4e464d3431bff1c14e01f59ad344a6c803a
+  SensorsAnalyticsSDK: f7846f823ed49dc1caf08ca2385b1561e76f46c6
+
+PODFILE CHECKSUM: dd0fa5adb1eb059db09105e5448dd1c9ba18c8df
+
+COCOAPODS: 1.11.3
