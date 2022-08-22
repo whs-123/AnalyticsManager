@@ -8,6 +8,7 @@
 
 import UIKit
 import AnalyticsManager
+import SensorsAnalyticsSDK
 
 class ViewController: UIViewController {
 
@@ -38,4 +39,3 @@ class ViewController: UIViewController {
         print("test")
     }
 }
-

@@ -8,6 +8,7 @@
 
 import UIKit
 import AnalyticsManager
+import SensorsAnalyticsSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         opt.enableAutoTrack = true
         
         AnalyticsManager.startAnalytics(with: opt)
+//        $AppStart
+//        SensorsAnalyticsSDK.sharedInstance()?.register(AppStartPropertyPlugin())
         return true
     }
 
