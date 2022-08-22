@@ -66,6 +66,7 @@
 		1F2F4B9A17237CD175EAFA9EE68D54EC /* SensorsAnalyticsSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 837288B2D84C8E4CAB4E2686330C5935 /* SensorsAnalyticsSDK.bundle */; };
 		1F48F5B659C453F8090104896D2485FA /* SALogMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6430869575DF993771B2AAFD2BB924 /* SALogMessage.m */; };
 		1F51871877A3D10FA15AC226C885FDF6 /* SAClassDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B8A4832AA50CC5E054079978FF7DB0 /* SAClassDescription.m */; };
+		1F624A1228B36990001D9285 /* UIViewController+Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F624A1128B36990001D9285 /* UIViewController+Analytics.swift */; };
 		1FF578AD28AF80CF00DBB49D /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF578A928AF80CF00DBB49D /* Analytics.swift */; };
 		1FF578AF28AF80CF00DBB49D /* UIView+Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF578AB28AF80CF00DBB49D /* UIView+Analytics.swift */; };
 		1FF578B028AF80CF00DBB49D /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF578AC28AF80CF00DBB49D /* AnalyticsManager.swift */; };
@@ -506,6 +507,7 @@
 		1DA30A772060FEDAF15D8017BAE245A3 /* SAVisualPropertiesConfigSources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAVisualPropertiesConfigSources.h; path = SensorsAnalyticsSDK/Visualized/Config/SAVisualPropertiesConfigSources.h; sourceTree = "<group>"; };
 		1E14C923B69BE29A371B1A17C3205CF9 /* SAViewNodeFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAViewNodeFactory.h; path = SensorsAnalyticsSDK/Visualized/VisualProperties/ViewNode/SAViewNodeFactory.h; sourceTree = "<group>"; };
 		1EC706A05FA26C63D93C1657F58C8AB8 /* SASlinkCreator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlinkCreator.h; path = SensorsAnalyticsSDK/Deeplink/SASlinkCreator.h; sourceTree = "<group>"; };
+		1F624A1128B36990001D9285 /* UIViewController+Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Analytics.swift"; sourceTree = "<group>"; };
 		1FF578A928AF80CF00DBB49D /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		1FF578AB28AF80CF00DBB49D /* UIView+Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Analytics.swift"; sourceTree = "<group>"; };
 		1FF578AC28AF80CF00DBB49D /* AnalyticsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
@@ -1082,6 +1084,7 @@
 			children = (
 				1FF578A928AF80CF00DBB49D /* Analytics.swift */,
 				1FF578AB28AF80CF00DBB49D /* UIView+Analytics.swift */,
+				1F624A1128B36990001D9285 /* UIViewController+Analytics.swift */,
 				1FF578AC28AF80CF00DBB49D /* AnalyticsManager.swift */,
 			);
 			name = Classes;
@@ -2180,6 +2183,7 @@
 			files = (
 				1FF578B028AF80CF00DBB49D /* AnalyticsManager.swift in Sources */,
 				BD0D57543C4A2805725B70828706AE63 /* AnalyticsManager-dummy.m in Sources */,
+				1F624A1228B36990001D9285 /* UIViewController+Analytics.swift in Sources */,
 				1FF578AF28AF80CF00DBB49D /* UIView+Analytics.swift in Sources */,
 				1FF578AD28AF80CF00DBB49D /* Analytics.swift in Sources */,
 			);

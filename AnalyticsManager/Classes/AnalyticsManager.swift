@@ -49,6 +49,10 @@ public struct AnalyticsManager {
         })
     }
     
+    public static func trackViewScreen(viewController: UIViewController, properties: [String: Any]) {
+        SensorsAnalyticsSDK.sharedInstance()?.trackViewScreen(viewController, properties: properties)
+    }
+    
     public static func ignoreAutoTrackViewControllers(controllers: [String]) {
         SensorsAnalyticsSDK.sharedInstance()?.ignoreAutoTrackViewControllers(controllers)
     }
